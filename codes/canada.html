@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadá</title>
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+            text-decoration: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        body {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 16pt;
+            text-indent: 36pt;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+</head>
+
+<body>
+    <h1>Sobre</h1>
+    <hr>
+    <p>
+        O Canadá é uma nação vasta e diversificada, destacando-se por sua geografia impressionante que abrange desde as
+        majestosas Montanhas Rochosas até as vastas planícies das pradarias e as deslumbrantes paisagens árticas. Com
+        uma população multicultural e multilíngue, o país promove a diversidade e a inclusão como valores fundamentais
+        de sua sociedade, contribuindo para um ambiente acolhedor e progressista.</p>
+
+    <p>Além de sua riqueza natural e cultural, o Canadá é uma potência econômica global, com uma economia diversificada
+        e próspera. Setores como recursos naturais, tecnologia, agricultura, manufatura e serviços financeiros
+        desempenham papéis significativos na economia do país. Além disso, o Canadá possui uma sólida rede de pesquisa e
+        inovação, com investimentos em ciência e tecnologia que impulsionam o desenvolvimento de novas tecnologias e
+        impulsionam o crescimento econômico.</p>
+
+    <p>Um aspecto notável do Canadá é seu sistema de saúde público, que oferece cuidados médicos acessíveis e de alta
+        qualidade para todos os cidadãos. O país também é conhecido por suas políticas progressistas em relação ao meio
+        ambiente, energia limpa e mudanças climáticas, buscando ser um líder global na promoção da sustentabilidade e na
+        proteção do meio ambiente.</p>
+    <hr>
+    <h2>Imagens</h2>
+
+
+    <img style="border-radius: 20px;" src="/img/imgCanada/folha.jpg" width="300" height="450" alt="">
+    <img style="border-radius: 20px;" src="/img/imgCanada/lago01.jpg" width="300" height="450" alt="">
+    <img style="border-radius: 20px;" src="/img/imgCanada/lago02.jpg" width="300" height="450" alt="">
+    <img style="border-radius: 20px;" src="/img/imgCanada/ottawa.jpg" width="300" height="450" alt="">
+    <br><br>
+    <a href="https://www.britannica.com/place/Canada" target="_blank" rel="noopener noreferrer">Fonte: Encyclopedia
+        britannica - Canadá</a>
+    <br><br>
+    <a href="menu.html" rel="noopener noreferrer">Voltar ao menu</a>
+    <br><br>
+    <a href="#top" class="back-to-top" id="backToTop">Voltar ao Topo</a>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTop").classList.add("show");
+            } else {
+                document.getElementById("backToTop").classList.remove("show");
+            }
+        }
+
+        document.getElementById("backToTop").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japão</title>
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+            text-decoration: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        body {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 16pt;
+            text-indent: 36pt;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+</head>
+
+<body>
+    <h1>Sobre</h1>
+    <hr>
+    <p>O Japão é um país fascinante, conhecido por sua rica cultura, tecnologia avançada e paisagens deslumbrantes.
+        Localizado no leste da Ásia, o Japão possui uma história milenar que influenciou profundamente não só a região,
+        mas também o mundo todo. Sua capital, Tóquio, é uma das cidades mais vibrantes e populosas do planeta, sendo um
+        centro global de negócios, cultura e inovação.</p>
+
+    <p>A cultura japonesa é caracterizada por sua etiqueta refinada, artes tradicionais como a cerimônia do chá, o
+        teatro Kabuki e as belas pinturas em estilo ukiyo-e. Além disso, o Japão é famoso por sua culinária única, que
+        vai desde pratos tradicionais como sushi, tempurá e ramen até iguarias modernas e criativas.</p>
+
+    <p>A tecnologia japonesa é reconhecida mundialmente pela sua qualidade e inovação. Empresas japonesas como Sony,
+        Toyota, Nintendo e Panasonic são líderes em seus setores, contribuindo significativamente para o avanço da
+        indústria eletrônica, automobilística e de entretenimento. O Japão também é conhecido por suas cidades
+        futurísticas, trens-bala de alta velocidade e avançados robôs industriais.</p>
+    <hr>
+    <h2>Imagens</h2>
+
+
+    <img style="border-radius: 20px;" src="/img/imgJapao/castelo.jpg" width="300" height="450"
+        alt="Cstelo estilo japones">
+    <img style="border-radius: 20px;" src="/img/imgJapao/monteFuji.jpg" width="300" height="450"
+        alt="Vulcão com neve cobrindo o seu topo">
+    <img style="border-radius: 20px;" src="/img/imgJapao/tori.jpg" width="300" height="450"
+        alt="caminho com varios portões laranja">
+    <img style="border-radius: 20px;" src="/img/imgJapao/hokkaido.jpg" width="300" height="450"
+        alt="cidade que neva bastante">
+    <br><br>
+    <a href="https://www.japan.travel/en/" target="_blank" rel="noopener noreferrer">Fonte: Japan National Tourism
+        Organization (JNTO).</a>
+    <br><br>
+    <a href="menu.html" rel="noopener noreferrer">Voltar ao menu</a>
+    <br><br>
+    <a href="#top" class="back-to-top" id="backToTop">Voltar ao Topo</a>
+    <script>
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTop").classList.add("show");
+            } else {
+                document.getElementById("backToTop").classList.remove("show");
+            }
+        }
+
+
+        document.getElementById("backToTop").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+</body>
+
+</html>

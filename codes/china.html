@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China</title>
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+            text-decoration: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        body {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 16pt;
+            text-indent: 36pt;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+</head>
+
+<body>
+    <h1>Sobre</h1>
+    <hr>
+    <p>
+        A China é uma nação de grande importância histórica e cultural, com uma civilização milenar que influenciou
+        profundamente a Ásia e o mundo. Suas contribuições incluem a invenção do papel, da pólvora, da bússola e da
+        impressão em blocos de madeira, marcos que impulsionaram avanços significativos em diversas áreas do
+        conhecimento humano ao longo da história. Além disso, a China é conhecida por sua rica herança cultural, que
+        abrange artes tradicionais como caligrafia, pintura, cerâmica, dança e música, refletindo a diversidade e a
+        criatividade do povo chinês ao longo dos séculos.</p>
+
+    <p>No contexto econômico, a China experimentou um crescimento notável desde a implementação das reformas econômicas
+        na década de 1970. Sua economia diversificada abrange setores como manufatura, tecnologia, agricultura e
+        serviços, com uma ênfase crescente em inovação e desenvolvimento sustentável. A China também desempenha um papel
+        crucial no comércio internacional, sendo um dos principais parceiros comerciais de muitos países ao redor do
+        mundo e um importante motor do crescimento econômico global.</p>
+
+    <p>Além disso, a China é um país de grande diversidade geográfica e cultural, com uma vasta extensão territorial que
+        abrange desde as montanhas do Himalaia até as metrópoles modernas e os antigos templos e palácios imperiais. Sua
+        população é composta por diversas etnias e grupos linguísticos, enriquecendo ainda mais a tapeçaria cultural do
+        país e oferecendo aos visitantes uma experiência única e fascinante.</p>
+    <hr>
+    <h2>Imagens</h2>
+
+
+    <img style="border-radius: 20px;" src="/img/imgChina/castelo.jpg" width="300" height="450" alt="">
+    <img style="border-radius: 20px;" src="/img/imgChina/Muralha.jpg" width="300" height="450" alt="">
+    <img style="border-radius: 20px;" src="/img/imgChina/pequin.jpg" width="300" height="450" alt="">
+    <img style="border-radius: 20px;" src="/img/imgChina/templo.jpg" width="300" height="450" alt="">
+    <br><br>
+    <a href="https://www.britannica.com/place/China" target="_blank" rel="noopener noreferrer">Fonte: Encyclopedia
+        britannica - China</a>
+    <br><br>
+    <a href="menu.html" rel="noopener noreferrer">Voltar ao menu</a>
+    <br><br>
+    <a href="#top" class="back-to-top" id="backToTop">Voltar ao Topo</a>
+    <script>
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTop").classList.add("show");
+            } else {
+                document.getElementById("backToTop").classList.remove("show");
+            }
+        }
+
+        document.getElementById("backToTop").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+</body>
+
+</html>
